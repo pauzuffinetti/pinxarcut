@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/pinxarcut/static/css/main.2a270162.css",
+    "main.js": "/pinxarcut/static/js/main.542ccfbe.js",
+    "static/media/Vinos.jpg": "/pinxarcut/static/media/Vinos.fed5b84d62d360c43ad7.jpg",
+    "static/media/producto5.jpg": "/pinxarcut/static/media/producto5.3ba4fedeeeaf8da88219.jpg",
+    "static/media/Tienda.jpg": "/pinxarcut/static/media/Tienda.77d22dd20a6b4aa6d6b8.jpg",
+    "static/media/jamones.jpg": "/pinxarcut/static/media/jamones.0b31f359c7cd9b15683d.jpg",
+    "static/media/Frascos.jpg": "/pinxarcut/static/media/Frascos.4343f973f10140bc417f.jpg",
+    "static/media/producto3.jpg": "/pinxarcut/static/media/producto3.e88464cab0ca07e32fae.jpg",
+    "static/media/producto1.jpg": "/pinxarcut/static/media/producto1.ff3fead3c3774e3ce03e.jpg",
+    "static/media/Duenios.jpg": "/pinxarcut/static/media/Duenios.72d4201dacc1314a22e5.jpg",
+    "static/media/producto7.jpg": "/pinxarcut/static/media/producto7.eea683f24c2bfed124a7.jpg",
+    "static/media/producto4.jpg": "/pinxarcut/static/media/producto4.edeaebf2eb7e295604ee.jpg",
+    "static/media/producto2.jpg": "/pinxarcut/static/media/producto2.fe0efbcf82d9941007fb.jpg",
+    "static/media/producto6.jpg": "/pinxarcut/static/media/producto6.d442cdb236b68c64619e.jpg",
+    "static/media/Logowhite.png": "/pinxarcut/static/media/Logowhite.e2a0db84729ec7046e9f.png",
+    "index.html": "/pinxarcut/index.html",
+    "main.2a270162.css.map": "/pinxarcut/static/css/main.2a270162.css.map",
+    "main.542ccfbe.js.map": "/pinxarcut/static/js/main.542ccfbe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2a270162.css",
+    "static/js/main.542ccfbe.js"
+  ]
+}
