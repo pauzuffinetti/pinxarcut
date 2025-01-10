@@ -3,7 +3,7 @@ import './Footer.css';
 
 const Footer = () => {
     return (
-        <footer className="footer">
+        <footer className="footer"> 
             <div className="footer-content">
                 <p className="p-footer">&copy; 2025 Xarcuteria La Pineda. Todos los derechos reservados.</p>
                 <ul className="social-links">
