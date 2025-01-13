@@ -18,6 +18,7 @@ const images = [
     { src: producto7, description: 'producto' },
 ];
 
+
 const Products = () => {
     return (
         <div class name="products-container">

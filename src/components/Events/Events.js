@@ -5,13 +5,10 @@ import Vinos from '../../assets/Vinos.jpg';
 const Events = () => {
   return (
     <div className="events-container" id="eventos">
+      <div className="events-text">
       <h2>Eventos</h2>
-      <p>
-        En Xarcuteria La Pineda, convertimos cualquier ocasión en una experiencia única y memorable. 
-        Nuestro espacio está disponible para eventos privados, caterings, catas de vinos y productos gourmet.
-      <br/>Nuestro equipo está preparado para organizar eventos que destaquen por la atención al
-detalle, la calidad de los productos y un servicio inigualable. Haz que tu evento sea
-inolvidable en el corazón de Barcelona.</p>
+      <p> En Xarcuteria La Pineda, convertimos cualquier ocasión en una experiencia única y memorable. Nuestro espacio está disponible para eventos privados, caterings, catas de vinos y productos gourmet. Nuestro equipo está preparado para organizar eventos que destaquen por la atención al detalle, la calidad de los productos y un servicio inigualable. Haz que tu evento sea inolvidable en el corazón de Barcelona.</p>
+      </div>
 
     <div className="cards">
         <div className="card">
