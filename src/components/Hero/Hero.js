@@ -5,6 +5,7 @@ import jamones from '../../assets/jamones.jpg';
 import Vinos from '../../assets/Vinos.jpg';
 import Frascos from '../../assets/Frascos.jpg';
 
+
 const images = [Tienda, jamones, Vinos, Frascos];
 
 const Hero = () => {

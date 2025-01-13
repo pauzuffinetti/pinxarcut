@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Products.css';
 import producto1 from '../../assets/producto1.jpg';
 import producto2 from '../../assets/producto2.jpg';
@@ -18,19 +18,33 @@ const images = [
     { src: producto7, description: 'producto' },
 ];
 
-
 const Products = () => {
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    const nextImage = () => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    };
+
+    const prevImage = () => {
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    };
+
     return (
-        <div class name="products-container">
-            <div className="texto-container"  id="productos">
+        <div className="products-container">
+            <div className="texto-container" id="productos">
                 <h2>Productos</h2>
             </div>
-            <div className="gallery-container">
-                {images.map((image, index) => (
-                    <div key={index} className="gallery-item" data-description={image.description}>
-                        <img src={image.src} alt={image.description} />
-                    </div>
-                ))}
+            <div className="carousel-container">
+                <button className="carousel-button prev" onClick={prevImage}>
+                    {'<'}
+                </button>
+                <div className="carousel-item">
+                    <img src={images[currentIndex].src} alt={images[currentIndex].description} />
+                    <p>{images[currentIndex].description}</p>
+                </div>
+                <button className="carousel-button next" onClick={nextImage}>
+                    {'>'}
+                </button>
             </div>
         </div>
     );

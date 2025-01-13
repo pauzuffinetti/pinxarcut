@@ -15,11 +15,9 @@
   box-sizing: border-box;
   font-family: 'Geologica', sans-serif;
   font-weight: 300;
-}
-html{
   scroll-behavior: smooth;
-
 }
+
 body {
   background: rgba(48, 48, 48, 0);
   transition: background-color 0.3s ease-in-out;
