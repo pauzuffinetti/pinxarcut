@@ -5,6 +5,7 @@ import About from './components/About/About';
 // import Equipo from './components/Equipo/Equipo';
 import Footer from './components/Footer/Footer';
 import Products from './components/Products/Products';
+import Events from './components/Events/Events';
 import Contact from './components/Contact/Contact';
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
       <About />
       {/* <Equipo /> */}
       <Products />
+      <Events />
       <Contact />
       <Footer />
     </div>

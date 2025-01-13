@@ -20,8 +20,8 @@ const images = [
 
 const Products = () => {
     return (
-        <div>
-            <div className="texto-container">
+        <div class name="products-container">
+            <div className="texto-container"  id="productos">
                 <h2>Productos</h2>
             </div>
             <div className="gallery-container">

@@ -10,7 +10,7 @@ const About = () => {
                 <img src={Tienda} alt="fotografía de la tienda" />
             </div>
 
-            <div className="texto-container">
+            <div className="texto-container" id="historia">
                 <h2>Historia</h2>
                 <p><strong>Fundada en 1904</strong>, Xarcuteria La Pineda es un icono gastronómico en Barcelona. Desde sus primeros días, ha sido un referente en el sector alimentario, destacándose por su compromiso con la calidad y la tradición.</p>
                 <p>En sus primeros años, La Pineda fue regentada por la <strong>Familia Verdaguer</strong> hasta que, en 1930, el señor <strong>Florenci Mir</strong> adquirió el negocio. Desde entonces, la familia Mir ha trabajado incansablemente para preservar la esencia del local, manteniendo gran parte de su decoración original y transmitiendo sus valores de generación en generación.</p>
