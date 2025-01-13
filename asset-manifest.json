@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pinxarcut/static/css/main.2a270162.css",
-    "main.js": "/pinxarcut/static/js/main.542ccfbe.js",
+    "main.css": "/pinxarcut/static/css/main.087eddbf.css",
+    "main.js": "/pinxarcut/static/js/main.989838c2.js",
     "static/media/Vinos.jpg": "/pinxarcut/static/media/Vinos.fed5b84d62d360c43ad7.jpg",
     "static/media/producto5.jpg": "/pinxarcut/static/media/producto5.3ba4fedeeeaf8da88219.jpg",
     "static/media/Tienda.jpg": "/pinxarcut/static/media/Tienda.77d22dd20a6b4aa6d6b8.jpg",
@@ -16,11 +16,11 @@
     "static/media/producto6.jpg": "/pinxarcut/static/media/producto6.d442cdb236b68c64619e.jpg",
     "static/media/Logowhite.png": "/pinxarcut/static/media/Logowhite.e2a0db84729ec7046e9f.png",
     "index.html": "/pinxarcut/index.html",
-    "main.2a270162.css.map": "/pinxarcut/static/css/main.2a270162.css.map",
-    "main.542ccfbe.js.map": "/pinxarcut/static/js/main.542ccfbe.js.map"
+    "main.087eddbf.css.map": "/pinxarcut/static/css/main.087eddbf.css.map",
+    "main.989838c2.js.map": "/pinxarcut/static/js/main.989838c2.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a270162.css",
-    "static/js/main.542ccfbe.js"
+    "static/css/main.087eddbf.css",
+    "static/js/main.989838c2.js"
   ]
 }
