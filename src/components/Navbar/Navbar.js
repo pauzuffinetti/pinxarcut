@@ -56,6 +56,7 @@ const Navbar = () => {
                 <ul>
                     <li><a href="#historia">HISTORIA</a></li>
                     <li><a href="#equipo">NUESTRO EQUIPO</a></li>
+                    <li><a href="#jamones">JAMONES</a></li>
                     <li><a href="#productos">PRODUCTOS</a></li>
                     <li><a href="#eventos">EVENTOS</a></li>
                     <li><a href="#blog">BLOG</a></li>
@@ -69,6 +70,7 @@ const Navbar = () => {
                 <ul className="menu" ref={menuRef}>
                     <li onClick={closeMenu}>HISTORIA</li>
                     <li onClick={closeMenu}>NUESTRO EQUIPO</li>
+                    <li onClick={closeMenu}>JAMONES</li>
                     <li onClick={closeMenu}>PRODUCTOS</li>
                     <li onClick={closeMenu}>EVENTOS</li>
                     <li onClick={closeMenu}>BLOG</li>

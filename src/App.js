@@ -1,8 +1,9 @@
 import React from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';  
-import About from './components/About/About';
-// import Equipo from './components/Equipo/Equipo';
+import Historia from './components/Historia/Historia';
+import Equipo from './components/Equipo/Equipo'; 
+import Jamones from './components/Jamones/Jamones';
 import Footer from './components/Footer/Footer';
 import Products from './components/Products/Products';
 import Events from './components/Events/Events';
@@ -12,10 +13,11 @@ const App = () => {
   return (
     <div>
       <Navbar />
-       <Hero />
-      <About />
-      {/* <Equipo /> */}
-      <Products />
+      <Hero />
+      <Historia />
+      <Equipo />
+      <Jamones />
+      {/* <Products /> */}
       <Events />
       <Contact />
       <Footer />
