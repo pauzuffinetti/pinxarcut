@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import './Jamones.css';
 import maldonado from '../../assets/maldonado.jpg';
 import joselito from '../../assets/joselito.jpg';
@@ -7,6 +7,7 @@ import belloterra from '../../assets/belloterra.jpg';
 
 const Jamones = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  
   const items = [
     {
       img: joselito,
@@ -38,38 +39,68 @@ const Jamones = () => {
     }
   ];
 
-  const handlePrev = () => {
+  const handlePrev = useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex === 0 ? items.length - 1 : prevIndex - 1));
-  };
+  }, [items.length]);
 
-  const handleNext = () => {
+  const handleNext = useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex === items.length - 1 ? 0 : prevIndex + 1));
-  };
+  }, [items.length]);
+
+  // Agregar control con teclado
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === 'ArrowLeft') {
+        handlePrev();
+      } else if (event.key === 'ArrowRight') {
+        handleNext();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [handlePrev, handleNext]);
 
   return (
     <div className="jamones-container">
       <div className="jamones-text" id="jamones">
         <h2>Jamones</h2>
-        <p>En Xarcuteria La Pineda, celebramos la tradición gastronómica española con una selección incomparable de jamones ibéricos de bellota. Somos la única tienda en Barcelona que  los cuatro tipos de denominación de origen del jamón ibérico, una experiencia que atrae a amantes de la gastronomía de toda la región.</p>
-        <p>Nuestros jamones son cuidadosamente seleccionados para ofrecer la máxima calidad y cada uno con características únicas que los convierten en un verdadero manjar.</p>
+        <p>En Xarcuteria La Pineda, celebramos la tradición gastronómica española con una selección incomparable de jamones ibéricos de bellota. 
+          Somos la única tienda en Barcelona que ofrece los cuatro tipos de denominación de origen del jamón ibérico, una experiencia que atrae a amantes de la gastronomía de toda la región.</p>
+        <p>Nuestros jamones son cuidadosamente seleccionados para ofrecer la máxima calidad, cada uno con características únicas que los convierten en un verdadero manjar.</p>
       </div>
 
-      <div className='carousel-container'>
-        <button onClick={handlePrev} className="carousel-button prev">‹</button>
-        <div className='carousel-item'>
-          <div className='carousel-img'>
-            <img src={items[currentIndex].img} alt={items[currentIndex].title}></img>
+      <div className="carousel-container">
+        <button 
+          onClick={handlePrev} 
+          className="carousel-button prev"
+          aria-label="Ver jamón anterior"
+        >
+          ‹
+        </button>
+        
+        <div className="carousel-item">
+          <div className="carousel-img">
+            <img src={items[currentIndex].img} alt={items[currentIndex].title} />
           </div>
-          <div className='carousel-text'>
+          <div className="carousel-text">
             <h3>{items[currentIndex].title}</h3>
             <ul>
-              <li>Origen: {items[currentIndex].origin}</li>
-              <li>Características: {items[currentIndex].characteristics}</li>
-              <li>Ideal para: {items[currentIndex].ideal}</li>
+              <li><strong>Origen:</strong> {items[currentIndex].origin}</li>
+              <li><strong>Características:</strong> {items[currentIndex].characteristics}</li>
+              <li><strong>Ideal para:</strong> {items[currentIndex].ideal}</li>
             </ul>
           </div>
         </div>
-        <button onClick={handleNext} className="carousel-button next">›</button>
+
+        <button 
+          onClick={handleNext} 
+          className="carousel-button next"
+          aria-label="Ver siguiente jamón"
+        >
+          ›
+        </button>
       </div>
     </div>
   );

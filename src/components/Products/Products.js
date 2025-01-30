@@ -1,39 +1,85 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Products.css';
 import producto1 from '../../assets/producto1.jpg';
 import producto2 from '../../assets/producto2.jpg';
 import producto3 from '../../assets/producto3.jpg';
-import producto4 from '../../assets/producto4.jpg';
-import producto5 from '../../assets/producto5.jpg';
-import producto6 from '../../assets/producto6.jpg';
-import producto7 from '../../assets/producto7.jpg';
 
 const images = [
-    { src: producto1, description: 'Jamón crudo' },
-    { src: producto2, description: 'producto' },
-    { src: producto3, description: 'producto' },
-    { src: producto4, description: 'producto' },
-    { src: producto5, description: 'producto' },
-    { src: producto6, description: 'producto' },
-    { src: producto7, description: 'producto' },
+  {
+    src: producto1,
+    title: 'Highlands',
+    subtitle: 'Scotland',
+    description: 'The mountains are calling',
+  },
+  {
+    src: producto2,
+    title: 'Machu Pichu',
+    subtitle: 'Peru',
+    description: 'Adventure is never far away',
+  },
+  {
+    src: producto3,
+    title: 'Chamonix',
+    subtitle: 'France',
+    description: 'Let your dreams come true',
+  },
 ];
 
-
 const Products = () => {
-    return (
-        <div class name="products-container">
-            <div className="texto-container"  id="productos">
-                <h2>Productos</h2>
-            </div>
-            <div className="gallery-container">
-                {images.map((image, index) => (
-                    <div key={index} className="gallery-item" data-description={image.description}>
-                        <img src={image.src} alt={image.description} />
-                    </div>
-                ))}
-            </div>
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const changeSlide = (direction) => {
+    setCurrentIndex((prevIndex) => {
+      const newIndex = prevIndex + direction;
+      if (newIndex < 0) return images.length - 1;
+      if (newIndex >= images.length) return 0;
+      return newIndex;
+    });
+  };
+
+  return (
+    <div className="products-container">
+      <h2 className="slider-title">Productos</h2>
+      <div className="slider">
+        <button className="slider--btn slider--btn__prev" onClick={() => changeSlide(-1)}>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="m15 18-6-6 6-6" />
+          </svg>
+        </button>
+
+        <div className="slides__wrapper">
+          {images.map((image, index) => {
+            const position =
+              index === currentIndex
+                ? 'current'
+                : index === (currentIndex + 1) % images.length
+                ? 'next'
+                : 'previous';
+            return (
+              <div key={index} className={`slide ${position}`}>
+                <div className="slide__inner">
+                  <div className="slide--image__wrapper">
+                    <img className="slide--image" src={image.src} alt={image.title} />
+                  </div>
+                  <div className={`slide-info ${position === 'current' ? 'visible' : ''}`}>
+                    <h2>{image.title}</h2>
+                    <h3>{image.subtitle}</h3>
+                    <p>{image.description}</p>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
-    );
+
+        <button className="slider--btn slider--btn__next" onClick={() => changeSlide(1)}>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="m9 18 6-6-6-6" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  );
 };
 
 export default Products;
