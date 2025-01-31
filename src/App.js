@@ -11,7 +11,7 @@ import Contact from './components/Contact/Contact';
 
 const App = () => {
   return (
-    <div>
+    <div className="app">
       <Navbar />
       <Hero />
       <Historia />
