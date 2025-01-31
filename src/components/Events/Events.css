@@ -1,24 +1,30 @@
 .events-container {
-padding: 3% 10%;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
 text-align: center;
-background-color: rgba(208, 255, 99, 0.205);
+background-color: rgb(234, 229, 223);
+padding: 3% 5%;
 }
 
 .events-text {
-max-width: 1400px;
-margin: 0 auto;
+max-width: 60%;
 }
 
 .events-container h2 {
 font-family: "DM Serif Text", sans-serif;
 font-size: 5rem;
 font-weight: 400;
-color: rgb(154,122,105);
-margin-bottom: 10px;
+color: rgb(154, 122, 105);
+margin-bottom: 20px;
 }
 
 .events-container p {
-margin-bottom: 50px;
+margin-bottom: 30px; 
+font-size: 1.5rem;
+color: #555;
 }
 
 .cards {
@@ -26,16 +32,19 @@ display: flex;
 justify-content: space-around;
 flex-wrap: wrap;
 gap: 20px;
+width: 100%;
+padding: 20px 0;
+flex-grow: 1;
 }
 
 .card {
 width: 100%;
 max-width: 400px;
+height: 375px;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 border-radius: 12px;
 overflow: hidden;
-text-align: left;
-margin: 0 10px;
+text-align: center;
 transition: transform 0.3s ease, box-shadow 0.3s ease;
 background-color: #fff;
 }
@@ -47,18 +56,29 @@ box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 
 .card img {
 width: 100%;
-height: auto;
-max-height: 200px;
+height: 200px;
 object-fit: cover;
 }
 
 .card h3 {
 margin: 15px 10px 10px;
-font-size: 1.5em;
+font-size: 1.8em;
 }
 
 .card p {
 margin: 10px;
 font-size: 1em;
 color: #555;
+}
+
+.btn{
+background: rgb(154, 122, 105);
+color: rgb(255, 255, 255);
+padding: 10px 20px;
+font-size: 18px;
+border-radius: 30px;
+cursor: pointer;
+border: 0;
+outline: 0;
+
 }

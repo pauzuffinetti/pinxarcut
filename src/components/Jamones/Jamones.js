@@ -47,7 +47,6 @@ const Jamones = () => {
     setCurrentIndex((prevIndex) => (prevIndex === items.length - 1 ? 0 : prevIndex + 1));
   }, [items.length]);
 
-  // Agregar control con teclado
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (event.key === 'ArrowLeft') {

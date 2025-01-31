@@ -1,13 +1,13 @@
 .container {
 width: 100%;
 color: white;
-padding: 5px 3%;
+padding: 1% 3%;
 position: fixed;
 top: 0;
 left: 0;
 display: flex;
 align-items: center;
-justify-content: space-between;
+justify-content: flex-end;
 z-index: 10;
 transition: all 0.3s ease;
 }
@@ -30,7 +30,7 @@ position: relative;
 .hamburger .line {
 width: 25px;
 height: 3px;
-background-color: white;
+background-color: rgb(154, 122, 105);
 transition: opacity 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 

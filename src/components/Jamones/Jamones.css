@@ -1,22 +1,35 @@
 .jamones-container {
-padding: 3% 10%;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+padding: 7% 10%;
 text-align: center;
 font-size: 1.3rem;
-background-color: rgba(255, 226, 99, 0.486);
+background-color: rgb(234, 229, 223);
 }
 
+.jamones-text p{
+font-size: 1.5rem;
+}
 .jamones-container h2 {
 font-family: "DM Serif Text", sans-serif;
 font-size: 5rem;
 font-weight: 400;
-color: rgb(154,122,105);
-margin-bottom: 10px;
+color: rgb(154, 122, 105);
+margin-BOTTOM: 10px;
 }
 
-.carousel-container{
+.carousel-container {
 display: flex;
 flex-direction: row;
-margin-top: 50px;
+justify-content: center;
+align-items: center;
+height: 60%;
+width: 100%;
+margin-top: 20px;
+position: relative;
 }
 
 .carousel-item {
@@ -25,18 +38,17 @@ align-items: center;
 background-color: #f9f9f9;
 border-radius: 10px;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-overflow: hidden;
 gap: 20px;
 padding: 40px;
-transition: transform 0.3s ease;
-max-width: 100%;
-flex-wrap: nowrap;
-margin: 0 auto;
+max-width: 70%;
+height: 100%;
+overflow: hidden;
 }
 
 .carousel-img {
 flex: 1;
 max-width: 40%;
+height: 100%;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -44,7 +56,7 @@ justify-content: center;
 
 .carousel-img img {
 width: 100%;
-height: auto;
+height: 100%;
 border-radius: 10px;
 object-fit: cover;
 }
@@ -67,21 +79,29 @@ font-style: italic;
 .carousel-text ul {
 list-style-type: disc;
 padding-left: 20px;
-font-size: 1.1rem;
+font-size: 1.2rem;
 color: #555;
-display: block;
 }
 
-.carousel-text ul li {
-font-size: 18px;
-}
-
-.carousel-button.prev, .carousel-button.next{
-background: rgba(0, 0, 0, 0);
+.carousel-button.prev,
+.carousel-button.next {
+background: rgba(0, 0, 0, 0.2);
 border: none;
 cursor: pointer;
 padding: 10px;
 font-size: 40px;
+color: white;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
 z-index: 10;
-color: rgb(124, 123, 123);
+border-radius: 50%;
+}
+
+.carousel-button.prev {
+left: 10px;
+}
+
+.carousel-button.next {
+right: 10px;
 }

@@ -1,81 +1,60 @@
 .hero {
-position: relative;
-width: 100%;
-min-height: 100vh;
-overflow: hidden;
-display: flex;
-align-items: center;
-justify-content: center;
-}
-    
-.hero-image {
-position: absolute;
-inset: 0;
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-opacity: 0;
-transition: opacity 2s ease-in-out;
-}
-
-.hero-image.visible {
-opacity: 1;
-}
-
-.hero-text {
-position: relative;
-z-index: 2;
-color: white;
-text-align: center;
-max-width: 800px;
-}
-.hero-text h1{
-font-size: 70px;
-font-weight: 300;
-}
-
-.hero-text p{
-font-family: "DM Serif Text", sans-serif;
-font-weight: 400;
-max-width: 700px;
-margin: 10px auto 20px;
-line-height: 1.4;
-font-size: 30px;
-color: white;
-}
-    
-
-
-
-
-
-/* .hero{
+    position: relative;
     width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(rgba(255, 255, 255, 0.2),rgba(255, 255, 255, 0)), url('../../assets/jamones.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
+    height: 100vh; /* Ajustado a height para mayor claridad */
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.hero-text{
+.hero-image {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.hero-image.visible {
+    opacity: 1;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+    color: white;
     text-align: center;
     max-width: 800px;
+    padding: 0 20px; /* Agrega padding para pantallas pequeñas */
+    animation: fadeIn 1s ease-in-out; /* Animación suave */
 }
 
-.hero-text h1{
-    font-size: 60px;
+/* .hero-text h1 {
+    font-size: 4rem; 
     font-weight: 300;
+    margin-bottom: 20px;
 }
 
-.hero-text p{
+.hero-text p {
+    font-family: "DM Serif Text", sans-serif;
+    font-weight: 400;
     max-width: 700px;
-    margin: 10px auto 20px;
-    line-height: 1.4;
-    font-size: 26px;
+    margin: 10px auto;
+    line-height: 1.6; 
+    font-size: 1.5rem;
     color: white;
 } */
+
+
+/* Consultas de medios para pantallas pequeñas */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+    .hero-text p {
+        font-size: 1.2rem;
+    }
+}

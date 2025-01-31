@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Navbar.css';
-import Logowhite from '../../assets/Logowhite.png';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,7 +20,6 @@ const Navbar = () => {
   const toggleMenu = () => {
     setMenuOpen((prevState) => !prevState);
   };
-  
 
   const closeMenu = () => {
     setMenuOpen(false);
@@ -29,26 +27,24 @@ const Navbar = () => {
 
   return (
     <nav className="container">
-      <img src={Logowhite} alt="Banner La Pineda" className="logo" />
       <button
         className={`hamburger ${menuOpen ? 'open' : ''}`}
         onClick={(e) => {
-            e.stopPropagation();
-            toggleMenu();
+          e.stopPropagation();
+          toggleMenu();
         }}
-        >
+      >
         {menuOpen ? (
-            <span className="close-icon">✖</span>
+          <span className="close-icon">✖</span>
         ) : (
-            <>
+          <>
             <span className="line"></span>
             <span className="line"></span>
             <span className="line"></span>
-            </>
+          </>
         )}
-        </button>
+      </button>
 
-        
       <ul className={`menu ${menuOpen ? 'open' : ''}`} ref={menuRef}>
         <li onClick={closeMenu}><a href="#historia">HISTORIA</a></li>
         <li onClick={closeMenu}><a href="#equipo">NUESTRO EQUIPO</a></li>

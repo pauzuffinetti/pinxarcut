@@ -7,7 +7,7 @@ const Equipo = () => {
     <div className="equipo">
 
             <div className="seccion-item">
-                <div className="texto-container" id="historia">
+                <div className="texto-container" id="equipo">
                     <h2>Equipo</h2>
                     <p>En Xarcuteria La Pineda, cada miembro de nuestro equipo encarna nuestra pasión por la calidad y el servicio. Desde 2016, hemos incorporado nuevos talentos que combinan tradición y modernidad para llevar la experiencia de La Pineda a otro nivel. </p>
                       <p>Expertos gastronómicos y enólogos conforman nuestro equipo, incluyendo un cortador de jamón con más de 10 años de experiencia en el sector. Este profesional asegura que cada loncha de nuestro jamón ibérico sea un testimonio de la dedicación y el respeto por los productos de alta calidad.</p>

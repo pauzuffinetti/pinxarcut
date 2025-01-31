@@ -35,7 +35,6 @@ const Footer = () => {
 
             <div className="footer-bottom">
                 <p className="p-footer">&copy; 2025 Xarcuteria La Pineda. Todos los derechos reservados.</p>
-                <a href="#menu" className="back-to-menu">Menú</a>
             </div>
         </footer>
     );
