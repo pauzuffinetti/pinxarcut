@@ -8,12 +8,12 @@ width: 100%;
 text-align: center;
 font-size: 1.3rem;
 background-color: #fcf6ef;
-padding: 0;
+padding: 1%;
 }
 
 .slider-title {
 font-family: "DM Serif Text", sans-serif;
-font-size: 4rem;
+font-size: 5rem;
 font-weight: 400;
 color: rgb(154, 122, 105);
 margin-bottom: 20px;
@@ -21,8 +21,8 @@ margin-bottom: 20px;
 
 .slider {
 position: relative;
-width: 80%;
-height: 70%;
+width: 45%;
+height: 100%;
 display: flex;
 align-items: center;
 justify-content: center;
