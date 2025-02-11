@@ -9,16 +9,20 @@ text-align: center;
 font-size: 1.3rem;
 background-color: rgb(234, 229, 223);
 }
+.jamones-text{
+margin-bottom: 20px;
+}
 
 .jamones-text p{
 font-size: 1.5rem;
 }
+
 .jamones-container h2 {
 font-family: "DM Serif Text", sans-serif;
 font-size: 5rem;
 font-weight: 400;
 color: rgb(154, 122, 105);
-margin-BOTTOM: 10px;
+margin-bottom: 20px;
 }
 
 .carousel-container {
@@ -28,7 +32,7 @@ justify-content: center;
 align-items: center;
 height: 60%;
 width: 100%;
-margin-top: 20px;
+margin: 20px;
 position: relative;
 }
 
@@ -72,6 +76,7 @@ max-width: 60%;
 }
 
 .carousel-text h3 {
+font-size: 32px;
 margin: 0 auto;
 font-style: italic;
 }
@@ -85,12 +90,12 @@ color: #555;
 
 .carousel-button.prev,
 .carousel-button.next {
-background: rgba(0, 0, 0, 0.2);
+background: rgba(0, 0, 0, 0);
 border: none;
 cursor: pointer;
 padding: 10px;
 font-size: 40px;
-color: white;
+color: rgb(7, 7, 7);
 position: absolute;
 top: 50%;
 transform: translateY(-50%);

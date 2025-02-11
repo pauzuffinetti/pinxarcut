@@ -33,7 +33,7 @@ const Products = () => {
   };
 
   return (
-    <div className="products-container">
+    <div className="products-container" id="productos">
       <h2 className="slider-title">Productos</h2>
       <div className="slider">
         <button className="slider--btn slider--btn__prev" onClick={() => changeSlide(-1)}>
