@@ -1,43 +1,25 @@
-import React from 'react';
-import './Footer.css';
+import React from "react";
+import "./Footer.css";
+import pin from "../../assets/pin.png";
+import telephone from "../../assets/telephone.png";
+import instagram from "../../assets/instagram.png";
+import mail from "../../assets/mail.png";
 
 const Footer = () => {
-    return (
-        <footer className="footer" role="contentinfo">
-            <div className="footer-container">
-                <div className="footer-column">
-                    <h3>📍 Dirección</h3>
-                    <address>
-                        <p>Carrer del Pi, 16, Ciutat Vella, 08002 Barcelona</p>
-                    </address>
+  return (
+    <footer className="footer">
+        <div className="footer-container">
+            <div className="footer-item"><img src={pin} alt="Location pin" /><h4>Carrer del Pi, 16, Ciutat Vella, 08002 Barcelona</h4></div>
+            <div className="footer-item"><img src={telephone} alt="Telephone" /><h4>933 024 393</h4></div>
+            <div className="footer-item"><a href="http://www.instagram.com/xarcuterialapineda" target="_blank" rel="noopener noreferrer"><img src={instagram} alt="Instagram" /></a></div>
+            <div className="footer-item"><img src={mail} alt="Email" /> <h4>xarcuterialapineda@gmail.com</h4></div>
+        </div>
 
-                    <h3>📞 Teléfono</h3>
-                    <p><a href="tel:+34933024393" aria-label="Llamar al 933 024 393">933 024 393</a></p>
-
-                    <h3>📧 Correo</h3>
-                    <p><a href="mailto:xarcuterialapineda@gmail.com" aria-label="Enviar correo a xarcuterialapineda@gmail.com">xarcuterialapineda@gmail.com</a></p>
-                </div>
-
-                <div className="footer-column">
-                    <h3>📲 Redes Sociales</h3>
-                    <div className="social-links">
-                        <p><a href="http://www.instagram.com/xarcuterialapineda" target="_blank" rel="noopener noreferrer" aria-label="Visitar Instagram de Xarcuteria La Pineda">📷 Instagram</a></p>
-                    </div>
-                </div>
-
-                <div className="footer-column">
-                    <h3>📜 Datos Fiscales</h3>
-                    <p>Comestibles la Pineda S.L.</p>
-                    <p>B02664324</p>
-                    <p>Calle del Pi 16, bajos, 08002 Barcelona</p>
-                </div>
+        <div className="footer-datos">
+            <h4>Comestibles la Pineda S.L. | B02664324 | Calle del Pi 16, bajos, 08002 Barcelona</h4>
             </div>
-
-            <div className="footer-bottom">
-                <p className="p-footer">&copy; 2025 Xarcuteria La Pineda. Todos los derechos reservados.</p>
-            </div>
-        </footer>
-    );
-}
+    </footer>
+  );
+};
 
 export default Footer;
