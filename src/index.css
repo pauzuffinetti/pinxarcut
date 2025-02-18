@@ -8,8 +8,7 @@ font-style: normal;
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
 
-
-*{
+* {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
@@ -22,35 +21,24 @@ scroll-behavior: smooth;
 margin: 0;
 padding: 0;
 height: 100%;
+width: 100%;
 background: rgba(48, 48, 48, 0);
 transition: background-color 0.3s ease-in-out;
 }
 
-a{
+a {
 text-decoration: none;
 color: inherit;
 line-height: 1;
 cursor: pointer;
 }
 
-
- /* .btn {
-background: rgba(255, 255, 255, 0.226);
-color: rgb(255, 255, 255);
-padding: 10px 20px;
-font-size: 16px;
-border-radius: 30px;
-cursor: pointer;
-border: 0;
-outline: 0;
- } */
-
-strong{
+strong {
 color: rgb(185, 148, 127);
 font-weight: 700;
 }
 
-h1{
+h1 {
 font-family: "DM Serif Text", serif;
 }
 
@@ -67,12 +55,12 @@ animation: slideIn 1s ease-out forwards;
 
 @keyframes slideIn {
 0% {
-opacity: 0;
-transform: translateY(50px);
+    opacity: 0;
+    transform: translateY(50px);
 }
 100% {
-opacity: 1;
-transform: translateY(0); 
+    opacity: 1;
+    transform: translateY(0); 
 }
 }
 
@@ -85,15 +73,13 @@ margin-bottom: 20px;
 margin-top: 40px;
 }
 
-
-p{
-    text-align: justify;
-    hyphens: auto;
-    text-align-last: center;
-    margin: 0 auto;
-    max-width: 1000px;
+p {
+text-align: justify;
+hyphens: auto;
+text-align-last: center;
+margin: 0 auto;
+max-width: 1000px;
 font-family: 'Geologica', sans-serif;
-font-size: 20px;
 font-weight: 300;
 color: rgb(37, 37, 37);
 }

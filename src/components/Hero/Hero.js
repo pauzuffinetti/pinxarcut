@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import './Hero.css';
 import primera from '../../assets/primera.jpg';
@@ -42,10 +43,6 @@ const Hero = () => {
                     aria-label={`Imagen ${index + 1}`}
                 ></div>
             ))}
-            {/* <div className="hero-text">
-                <h1>XARCUTERIA LA PINEDA</h1>
-                <p>Desde el año 1930</p>
-            </div> */}
         </div>
     );
 };

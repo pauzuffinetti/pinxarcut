@@ -1,7 +1,7 @@
 .hero {
     position: relative;
     width: 100%;
-    height: 100vh; /* Ajustado a height para mayor claridad */
+    height: 100vh;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -10,7 +10,8 @@
 
 .hero-image {
     position: absolute;
-    inset: 0;
+    width: 100%;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -22,39 +23,17 @@
     opacity: 1;
 }
 
-.hero-text {
-    position: relative;
-    z-index: 2;
-    color: white;
-    text-align: center;
-    max-width: 800px;
-    padding: 0 20px; /* Agrega padding para pantallas pequeñas */
-    animation: fadeIn 1s ease-in-out; /* Animación suave */
-}
-
-/* .hero-text h1 {
-    font-size: 4rem; 
-    font-weight: 300;
-    margin-bottom: 20px;
-}
-
-.hero-text p {
-    font-family: "DM Serif Text", sans-serif;
-    font-weight: 400;
-    max-width: 700px;
-    margin: 10px auto;
-    line-height: 1.6; 
-    font-size: 1.5rem;
-    color: white;
-} */
-
-
-/* Consultas de medios para pantallas pequeñas */
-@media (max-width: 768px) {
-    .hero-text h1 {
-        font-size: 2.5rem;
+/* Responsive */
+@media (max-width: 1980px) {
+    .hero, .hero-image {
+        width: 100%;
+        height: 100vh;
     }
-    .hero-text p {
-        font-size: 1.2rem;
+}
+
+@media (max-width: 280px) {
+    .hero, .hero-image {
+        width: 100vw;
+        height: 100vh;
     }
 }
