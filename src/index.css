@@ -18,8 +18,6 @@ font-weight: 300;
 
 body, html {
 scroll-behavior: smooth;
-margin: 0;
-padding: 0;
 height: 100%;
 width: 100%;
 background: rgba(48, 48, 48, 0);
@@ -83,6 +81,8 @@ font-family: 'Geologica', sans-serif;
 font-weight: 300;
 color: rgb(37, 37, 37);
 }
+
+
 
 /* scrollbar */
 ::-webkit-scrollbar {

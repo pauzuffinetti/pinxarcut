@@ -2,7 +2,6 @@
 height: 100vh;
 display: flex;
 flex-direction: column;
-justify-content: space-between;
 align-items: center;
 padding: 3% 10%;
 text-align: center;
@@ -11,8 +10,7 @@ background-color: rgb(234, 229, 223);
 }
 
 .jamones-text{
-margin-bottom: 30px;
-
+margin-bottom: 70px;
 }
 
 .jamones-text p{
@@ -32,7 +30,7 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
-height: 60%;
+height: 80%;
 width: 100%;
 margin: 20px;
 position: relative;
@@ -112,3 +110,124 @@ left: 10px;
 .carousel-button.next {
 right: 10px;
 }
+
+
+
+
+@media (max-width: 1980px) {
+.jamones-container {
+height: 100vh;
+}
+.jamones-text{
+margin-bottom: 40px;
+}
+
+.jamones-text p{
+font-size: 1.3rem;
+}
+
+.carousel-container{
+height: 40%;
+width: 90%;
+margin: 20px;
+}
+.carousel-img img {
+width: 100%;
+height: 100%;
+border-radius: 10px;
+object-fit: cover;
+}
+.carousel-text h3 {
+font-size: 2.4rem;
+margin: 0 auto;
+}
+
+.carousel-text ul {
+list-style-type: disc;
+padding-left: 15px;
+font-size: 1.1rem;
+}
+
+.carousel-item {
+display: flex;
+max-width: 100%;
+height: 100%;
+}
+}
+
+
+/* @media (max-width: 800px) {
+
+.jamones-text{
+margin-bottom: 10px;
+}
+.jamones-text h2{
+    font-size: 2.5rem;
+}
+.jamones-text p{
+font-size: 1.1rem;
+}
+
+.carousel-container{
+height: 40%;
+width: 100%;
+margin: 20px;
+}
+
+.carousel-img img {
+width: 100%;
+height: 100%;
+border-radius: 10px;
+object-fit: cover;
+}
+
+.carousel-text h3 {
+font-size: 1.4rem;
+margin: 0 auto;
+}
+
+.carousel-text ul {
+list-style-type: disc;
+padding-left: 15px;
+font-size: 0.8rem;
+}
+
+}
+
+@media (max-width: 480px) {
+
+    .jamones-text{
+    margin-bottom: 10px;
+    }
+    .jamones-text h2{
+        font-size: 2.5rem;
+    }
+    .jamones-text p{
+    font-size: 1.1rem;
+    }
+    
+    .carousel-container{
+    height: 40%;
+    width: 100%;
+    margin: 20px;
+    }
+    
+    .carousel-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    }
+    
+    .carousel-text h3 {
+    font-size: 1.4rem;
+    margin: 0 auto;
+    }
+    
+    .carousel-text ul {
+    list-style-type: disc;
+    padding-left: 15px;
+    font-size: 0.8rem;
+    }
+    
+    } */
